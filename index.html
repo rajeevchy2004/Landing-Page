@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Rajeev's web</h2>
+            </div>
+
+            <div class="menu">
+                <ul>
+                    <li><a href="home.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="service.html">SERVICE</a></li>
+                    <li><a href="design.html">DESIGN</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+
+        </div> 
+        <div class="content">
+            <h1>Web Design & <br><span>Development</span> <br>Course</h1>
+            <p class="par">my name is Rajeev Kumar chy  i am currently pursuing B.tech in computer  
+                 science. <br> i am a web developer, i like to build different types of interactive websites.
+                <br> my hobby is to make websites & apps, playing cricket and listening  musics. </p>
+
+                <button class="cn"><a href="join-us.html">JOIN US</a></button>
+
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="login.html">Login</a></button>
+
+                    <p class="link">Don't have an account?<br>
+                    <p class="liw">Log in with</p>
+
+                    <div class="icons">
+                        <a href="#" onclick="loginWithFacebook()"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#" onclick="loginWithInstagram()"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#" onclick="loginWithLinkedIn()"><ion-icon name="logo-linkedin"></ion-icon></a>
+                        <a href="#" onclick="loginWithGoogle()"><ion-icon name="logo-google"></ion-icon></a>
+                    </div>
+
+                </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script>
+        function loginWithFacebook() {
+            // Redirect to Facebook login page or handle Facebook login API
+            window.location.href = 'https://www.facebook.com/login';
+        }
+
+        function loginWithInstagram() {
+            // Redirect to Instagram login page or handle Instagram login API
+            window.location.href = 'https://www.instagram.com/accounts/login/';
+        }
+
+        function loginWithLinkedIn() {
+            // Redirect to LinkedIn login page or handle LinkedIn login API
+            window.location.href = 'https://www.linkedin.com/login';
+        }
+
+        function loginWithGoogle() {
+            // Redirect to Google login page or handle Google login API
+            window.location.href = 'https://accounts.google.com/login';
+        }
+    </script>
+</body>
+</html>

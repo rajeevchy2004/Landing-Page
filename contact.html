@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('contact.webp'); /* Background image */
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 100px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+        form {
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+            display: inline-block;
+            width: 80%;
+            max-width: 400px;
+        }
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            border-radius: 5px;
+        }
+        button {
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+        }
+        .contact-details {
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .profile-image {
+            margin-top: 20px;
+        }
+        .profile-image img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%; /* Round shape */
+            border: 3px solid white;
+            transition: transform 0.3s ease, border-color 0.3s ease; /* Hover effect */
+        }
+        .profile-image img:hover {
+            transform: scale(1.1); /* Zoom effect on hover */
+            border-color: #007BFF; /* Border color change on hover */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <!-- Round shape image with hover effect -->
+        <div class="profile-image">
+            <img src="rajeev1.jpg" alt="Profile Image">
+        </div>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+        <div class="contact-details">
+            <h2>Contact Details</h2>
+            <p>Name: Rajeev kumar choudhary</p>
+            <p>Email: rajeevkumarchy120204@gmail.com</p>
+            <p>Phone: 8252122995</p>
+            <p>Address: centurion university pkd, R.sitapur, india</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('service.avif');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 100px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+        .service {
+            background: rgba(39, 10, 207, 0.5);
+            padding: 20px;
+            margin: 20px auto;
+            border-radius: 10px;
+            width: 80%;
+            max-width: 600px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+        }
+        .service:hover {
+            transform: scale(1.05); /* Zoom effect on hover */
+            box-shadow: 0 0 20px rgba(20, 255, 8, 0.84); /* Glow effect on hover */
+        }
+        .service h2 {
+            font-size: 2em;
+            margin-bottom: 10px;
+            transition: color 0.3s ease; /* Smooth color transition */
+        }
+        .service h2:hover {
+            color: #007BFF; /* Change color on hover */
+        }
+        .service p {
+            font-size: 1.2em;
+            margin-bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Our Services</h1>
+        <div class="service">
+            <h2>Website Design</h2>
+            <p>We create visually appealing and user-friendly website designs.</p>
+        </div>
+        <div class="service">
+            <h2>Web Development</h2>
+            <p>We develop responsive and dynamic websites tailored to your needs.</p>
+        </div>
+        <div class="service">
+            <h2>E-commerce Development</h2>
+            <p>We build robust e-commerce platforms for your online business.</p>
+        </div>
+        <div class="service">
+            <h2>SEO & Digital Marketing</h2>
+            <p>We optimize your website for search engines and manage digital marketing campaigns.</p>
+        </div>
+        <div class="service">
+            <h2>UI/UX Design</h2>
+            <p>We design intuitive and engaging user interfaces for better user experience.</p>
+        </div>
+    </div>
+</body>
+</html>

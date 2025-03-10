@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Join Us</title>
+    <style>
+        /* General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .main {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .benefits-section h2 {
+            color: #ff7200;
+            margin-bottom: 15px;
+        }
+
+        .benefits-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .benefits-section li {
+            margin-bottom: 10px;
+        }
+
+        /* Job Listing Section */
+        .job-listing-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .job-listing-section h2 {
+            color: #ff7200;
+            margin-bottom: 15px;
+        }
+
+        .job-listing-section ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+
+        .job-listing-section li {
+            margin-bottom: 10px;
+        }
+
+        /* Company Culture Section */
+        .company-culture-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .company-culture-section h2 {
+            color: #ff7200;
+            margin-bottom: 15px;
+        }
+
+        .company-culture-section img {
+            border-radius: 8px;
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Application Section */
+        .application-section {
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+
+        .application-section h2 {
+            color: #ff7200;
+            margin-bottom: 15px;
+        }
+
+        .application-section label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .application-section input,
+        .application-section textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .application-section textarea {
+            resize: vertical;
+        }
+
+        .application-section button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ff7200;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .application-section button:hover {
+            background-color: #e65c00;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <!-- Benefits Section -->
+        <div class="benefits-section">
+            <h2>Benefits of Joining Web Development</h2>
+            <ul>
+                <li>High demand for web developers in the job market.</li>
+                <li>Opportunity to work remotely or as a freelancer.</li>
+                <li>Creative freedom to build interactive and dynamic websites.</li>
+                <li>Competitive salary and career growth opportunities.</li>
+                <li>Chance to work with cutting-edge technologies like AI, blockchain, and cloud computing.</li>
+            </ul>
+        </div>
+
+        <!-- Job Listing Section -->
+        <div class="job-listing-section">
+            <h2>Job Roles We Are Hiring For</h2>
+            <ul>
+                <li><strong>Frontend Developer:</strong> Build user interfaces using HTML, CSS, and JavaScript.</li>
+                <li><strong>Backend Developer:</strong> Work on server-side logic and databases.</li>
+                <li><strong>Full Stack Developer:</strong> Handle both frontend and backend development.</li>
+                <li><strong>UI/UX Designer:</strong> Design user-friendly and visually appealing interfaces.</li>
+                <li><strong>DevOps Engineer:</strong> Manage deployment and infrastructure.</li>
+            </ul>
+        </div>
+
+        <!-- Company Culture Section -->
+        <div class="company-culture-section">
+            <h2>Our Company Culture</h2>
+            <p><strong>Company Name:</strong> Tech Innovators Inc.</p>
+            <p><strong>Office Image:</strong></p>
+            <img src="office.jpg" alt="Office Image" width="400" height="300">
+            <p>We believe in fostering a collaborative and inclusive environment where creativity and innovation thrive. Our team is passionate about building solutions that make a difference.</p>
+        </div>
+
+        <!-- Application Section -->
+        <div class="application-section">
+            <h2>How to Apply</h2>
+            <form id="applicationForm">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+
+                <label for="resume">Upload Resume:</label>
+                <input type="file" id="resume" accept=".pdf,.doc,.docx" required>
+
+                <label for="coverLetter">Cover Letter:</label>
+                <textarea id="coverLetter" placeholder="Write your cover letter here" rows="5" required></textarea>
+
+                <label for="socialMedia">Social Media Links:</label>
+                <input type="text" id="socialMedia" placeholder="Enter links to your LinkedIn, GitHub, etc.">
+
+                <button type="submit" class="btnn">Submit Application</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Function to handle form submission
+        document.getElementById('applicationForm').addEventListener('submit', function (event) {
+            event.preventDefault(); // Prevent form from submitting
+
+            // Get form data
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const resume = document.getElementById('resume').files[0];
+            const coverLetter = document.getElementById('coverLetter').value;
+            const socialMedia = document.getElementById('socialMedia').value;
+
+            // Save form data to localStorage (for demonstration purposes)
+            localStorage.setItem('applicationName', name);
+            localStorage.setItem('applicationEmail', email);
+            localStorage.setItem('applicationCoverLetter', coverLetter);
+            localStorage.setItem('applicationSocialMedia', socialMedia);
+
+            alert('Application submitted successfully!');
+            window.location.href = 'thank-you.html'; // Redirect to a thank-you page
+        });
+    </script>
+</body>
+</html>

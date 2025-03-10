@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design Projects</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('design.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 100px 20px;
+        }
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .project img {
+            width: 200px;
+            height: 200px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        .project img:hover {
+            transform: scale(1.1);
+        }
+        .feedback {
+            margin-top: 50px;
+            background: rgba(0, 0, 0, 0.5);
+            padding: 20px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Design Projects</h1>
+        <div class="projects">
+            <div class="project">
+                <img src="proj1.jpeg" alt="Project 1">
+            </div>
+            <div class="project">
+                <img src="proj2.jpeg" alt="Project 2">
+            </div>
+            <div class="project">
+                <img src="proj3.jpg" alt="Project 3">
+            </div>
+        </div>
+        <div class="feedback">
+            <h2>Happy Clients</h2>
+            <p>"The designs were amazing and exceeded our expectations!" - Client A</p>
+            <p>"Highly professional and creative team!" - Client B</p>
+        </div>
+    </div>
+</body>
+</html>
